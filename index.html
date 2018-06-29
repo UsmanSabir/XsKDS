@@ -12,7 +12,20 @@
 
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#1976d2">
-<link rel="stylesheet" href="styles.98ff2f1db8191e1f6d9b.css"></head>
+<link rel="stylesheet" href="styles.98ff2f1db8191e1f6d9b.css">
+   <script>
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect != location.href) {
+        history.replaceState(null, null, redirect);        
+      }
+      else {        
+      }
+    })();
+  </script>
+  
+  </head>
 <body>
   <app-root></app-root>
 <script type="text/javascript" src="runtime.a66f828dca56eeb90e02.js"></script><script type="text/javascript" src="polyfills.7a0e6866a34e280f48e7.js"></script><script type="text/javascript" src="main.301f583c079e76b70d2b.js"></script></body>
